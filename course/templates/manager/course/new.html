@@ -1,0 +1,121 @@
+{% extends 'base/manager/base.html' %}
+{% load static %}
+
+{% block title %}
+    <title>جهاد دانشگاهی البرز | معاونت آموزشی</title>
+{% endblock %}
+
+<!-- BEGIN: Header -->
+{% block header %}
+    <div class="content-header-left col-12 mb-2 mt-1">
+        <div class="row breadcrumbs-top">
+        <div class="col-12">
+            <h5 class="content-header-title float-left pr-1">اضافه کردن دوره</h5>
+            <div class="breadcrumb-wrapper">
+            <ol class="breadcrumb p-0 mb-0">
+                <li class="breadcrumb-item"><a href="{% url 'manager_index' %}"><i class="bx bx-home-alt"></i></a>
+                </li>
+                <li class="breadcrumb-item"><a href="{% url 'course_list' %}">دوره ها</a>
+                </li>
+                <li class="breadcrumb-item active"><a href="{% url 'course_new' %}">اضافه کردن دوره</a>
+                </li>
+            </ol>
+            </div>
+        </div>
+        </div>
+    </div>
+{% endblock %}
+<!-- END: Header-->
+
+<!-- BEGIN: Body-->
+{% block content %}
+    <section>
+      <div class="row">
+          <div class="col-lg-8 col-md-12 col-sm-12">
+              <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">فرم اضافه کردن دوره جدید</h4>
+                </div>
+                <div class="card-content">
+                    <div class="card-body">
+                        <form method="POST" class="form form-horizontal">
+
+                            {% csrf_token %}
+                            <div class="form-body">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="">نام دوره</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.title }}
+                                            <div class="form-control-position">
+                                              <i class="bx bx-detail"></i>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="">آدرس اینترنتی</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.slug }}
+                                            <div class="form-control-position">
+                                              <i class="bx bx-link"></i>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="">نویسنده</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.author }}
+                                            <div class="form-control-position">
+                                              <i class="bx bx-user"></i>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="">محتوا</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.body }}
+                                            <div class="form-control-position">
+                                              <i class="bx bx-text"></i>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="">وضعیت</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.status }}
+                                            <div class="form-control-position">
+                                              <i class="bx bx-list-check"></i>
+                                            </div>
+                                          </div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-end ">
+                                        <button type="submit" class="btn btn-primary mr-1 mb-1">ثبت</button>
+                                        <button type="reset" class="btn btn-light-secondary mr-1 mb-1">بازنشانی</button>
+                                    </div>
+                                </div>
+                            </div>                           
+                        </form>
+                    </div>
+                </div>
+              </div>
+          </div>
+      </div>
+    </section>
+{% endblock %}
+<!-- END: Body-->
+
+<!-- BEGIN: Page JS-->
+{% block pagejs %}
+    <script src="{% static 'assets/js/scripts/pages/dashboard-ecommerce.js' %}"></script>
+{% endblock %}
+<!-- END: Page JS-->
