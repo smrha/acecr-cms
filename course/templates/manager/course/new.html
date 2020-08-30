@@ -98,6 +98,19 @@
                                             </div>
                                           </div>
                                     </div>
+                                    <div class="col-md-3">
+                                        <label for="">وضعیت</label>
+                                    </div>
+                                    <div class="col-md-9 form-group">
+                                        <div class="position-relative has-icon-left">
+                                            {{ form.publish }}
+                                            <!-- <input type="datetime"> -->
+                                            <div class="form-control-position">
+                                                <span class="input-group-text cursor-pointer" id="date3-1">ICON</span>
+                                              <!-- <i class="bx bx-list-check"></i> -->
+                                            </div>
+                                          </div>
+                                    </div>
                                     <div class="col-12 d-flex justify-content-end ">
                                         <button type="submit" class="btn btn-primary mr-1 mb-1">ثبت</button>
                                         <button type="reset" class="btn btn-light-secondary mr-1 mb-1">بازنشانی</button>
@@ -116,6 +129,14 @@
 
 <!-- BEGIN: Page JS-->
 {% block pagejs %}
-    <script src="{% static 'assets/js/scripts/pages/dashboard-ecommerce.js' %}"></script>
+$('#date3-1').MdPersianDateTimePicker({
+    targetTextSelector: '#id_publish',
+    selectedDate: new Date('2018/9/30 12:20:32'),
+    isGregorian: true,
+    dateFormat: 'yyyy-MM-dd hh:mm:ss',
+    calendarViewOnChange: function (date) {
+        console.log(date);
+    }
+});
 {% endblock %}
 <!-- END: Page JS-->

@@ -36,7 +36,16 @@ class CourseForm(forms.ModelForm):
             'class': 'form-control text-left',
         }
     ))
+    publish = forms.DateTimeField(widget=forms.DateTimeInput(
+        attrs = {
+            'aria-describedby': 'date3-1',
+            'aria-label': 'date3-1',
+            'class': 'form-control text-left',
+            'placeholder': 'نام دوره'
+        }
+    ))
+    
 
     class Meta:
         model = Course
-        fields = ['title', 'slug', 'author', 'body', 'status']
+        fields = ['title', 'slug', 'author', 'body', 'status', 'publish']
