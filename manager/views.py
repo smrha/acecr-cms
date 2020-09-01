@@ -27,3 +27,24 @@ def course_new(request):
             'form': form
         }
         return render(request, 'manager/course/new.html', context)
+
+def course_edit(request, pk):
+    course = Course.objects.get(id=pk)
+    form = CourseForm(request.POST or None, instance=course)
+    if request.method == 'POST':
+        if form.is_valid:
+            try:
+                form.save()
+                return redirect('course_list')
+            except:
+                return render(request, 'manager/course/edit.html', context)
+    else:
+        context = {
+            'form': form
+        }
+        return render(request, 'manager/course/edit.html', context)
+
+def course_delete(request, pk):
+    course = Course.objects.get(id=pk)
+    course.delete()
+    return redirect('course_list')

@@ -3,15 +3,229 @@
 
 {% block title %}
     <title>جهاد دانشگاهی البرز | معاونت آموزشی</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/pages/page-knowledge-base.css' %}">
 {% endblock %}
 
 <!-- BEGIN: Body-->
 {% block content %}
     <section id="dashboard-analytics">
       <div class="row">
-          
+        <div class="col-12">
+            <div class="card bg-transparent shadow-none kb-header">
+              <div class="card-content">
+                <div class="card-body text-center">
+                  <h1 class=" mb-2 kb-title">چی میخوای یاد بگیری؟</h1>
+                  <p class=" mb-3">
+                    آموزش‌های کاربردی از حرفه‌ای‌ها برای اشتغال | معاونت آموزشی جهاد دانشگاهی استان البرز
+                  </p>
+                  <form>
+                    <fieldset class="form-group position-relative w-50 mx-auto kb-search-width">
+                      <input type="text" class="form-control form-control-lg round pl-2" id="searchbar" placeholder="دوره مورد نظر خود را جستجو کنید ...">
+                      <button class="btn btn-primary round position-absolute d-none d-sm-block" type="button">جستجو</button>
+                      <button class="btn btn-primary round position-absolute d-block d-sm-none" type="button"><i class="bx bx-search"></i></button>
+                    </fieldset>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
     </section>
+
+    <section class="kb-content">
+        <div class="row kb-search-content-info mx-1 mx-md-2 mx-lg-5">
+          <div class="col-12">
+            <div class="row match-height">
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-1">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: users.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-1;"></i>
+                        </div>
+                        <h5>زبان های خارجه</h5>
+                        <p class=" text-muted">زبان انگلیسی، فرانسه، آلمانی، ترکی استانبولی، زبان چینی</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-2">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: gears.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-2;"></i>
+                        </div>
+                        <h5>فنی مهندسی</h5>
+                        <p class=" text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-3">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: desktop.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-3;"></i>
+                        </div>
+                        <h5>علوم کامپیوتر</h5>
+                        <p class=" text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-4">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: brush.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-4;"></i>
+                        </div>
+                        <h5>هنر</h5>
+                        <p class=" text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-5">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: pulse.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-5;"></i>
+                        </div>
+                        <h5>علوم پزشکی</h5>
+                        <p class=" text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6 kb-search-content">
+                <div class="card kb-hover-6">
+                  <div class="card-content">
+                    <div class="card-body text-center">
+                      <a href="page-knowledge-categories.html">
+                        <div class=" mb-1">
+                          <i class="livicon-evo" data-options="name: balance.svg; size: 50px; strokeColorAlt: #FDAC41; strokeColor: #5A8DEE; style: lines-alt; eventOn: .kb-hover-6;"></i>
+                        </div>
+                        <h5>علوم انسانی</h5>
+                        <p class=" text-muted">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="columns">
+        <!-- <div class="row">
+          <div class="col-12 mt-3 mb-1">
+            <h4 class="text-uppercase">ستون ها</h4>
+          </div>
+        </div> -->
+        <div class="row">
+          <div class="col-12">
+            <div class="col-md-12 mt-1">
+                <div class="card-group">
+                    <div class="card">
+                        <div class="card-content">
+                          <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">عنوان کارت</h4>
+                            <p class="card-text">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-content">
+                          <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">عنوان کارت</h4>
+                            <p class="card-text">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-content">
+                          <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                          <div class="card-body">
+                            <h4 class="card-title">عنوان کارت</h4>
+                            <p class="card-text">
+                              لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                            </p>
+                            <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                  
+                  <div class="card">
+                    <div class="card-content">
+                      <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                      <div class="card-body">
+                        <h4 class="card-title">عنوان کارت</h4>
+                        <p class="card-text">
+                          لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                        </p>
+                        <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                      </div>
+                    </div>
+                  </div>
+                <div class="card-columns">
+                  
+                </div>
+                <div class="card-columns">
+                    <div class="card">
+                      <div class="card-content">
+                        <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">عنوان کارت</h4>
+                          <p class="card-text">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                          </p>
+                          <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-columns">
+                    <div class="card">
+                      <div class="card-content">
+                        <img class="card-img-top img-fluid" src="{% static 'assets/images/slider/09.png' %}" alt="Card image cap">
+                        <div class="card-body">
+                          <h4 class="card-title">عنوان کارت</h4>
+                          <p class="card-text">
+                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها
+                          </p>
+                          <a href="#" class="btn btn-outline-primary">گزینه نمایشی</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </section>
 {% endblock %}
 <!-- END: Body-->
 

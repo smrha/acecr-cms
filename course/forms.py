@@ -27,7 +27,7 @@ class CourseForm(forms.ModelForm):
     ))
     body = forms.CharField(widget=forms.Textarea(
         attrs = {
-            'class': 'form-control text-left',
+            'class': 'form-control text-left editor',
         }
     ))
     status = forms.CharField(widget=forms.Select(
@@ -38,10 +38,8 @@ class CourseForm(forms.ModelForm):
     ))
     publish = forms.DateTimeField(widget=forms.DateTimeInput(
         attrs = {
-            'aria-describedby': 'date3-1',
-            'aria-label': 'date3-1',
+            'type': 'date',
             'class': 'form-control text-left',
-            'placeholder': 'نام دوره'
         }
     ))
     

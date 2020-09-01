@@ -19,31 +19,15 @@
                 </li>
             </ul>
             </li>
-            <li class=" navigation-header"><span>برنامه ها</span>
+            <li class=" navigation-header"><span>منو</span>
             </li>
-            <li class=" nav-item"><a href="app-email.html"><i class="menu-livicon" data-icon="envelope-pull"></i><span class="menu-title" data-i18n="Email">ایمیل</span></a>
-            </li>
-            <li class=" nav-item"><a href="app-chat.html"><i class="menu-livicon" data-icon="comments"></i><span class="menu-title" data-i18n="Chat">گفتگو</span></a>
-            </li>
-            <li class=" nav-item"><a href="app-todo.html"><i class="menu-livicon" data-icon="check-alt"></i><span class="menu-title" data-i18n="Todo">وظایف</span></a>
-            </li>
-            <li class=" nav-item"><a href="app-calendar.html"><i class="menu-livicon" data-icon="calendar"></i><span class="menu-title" data-i18n="Calendar">تقویم</span></a>
-            </li>
-            <li class=" nav-item"><a href="app-kanban.html"><i class="menu-livicon" data-icon="grid"></i><span class="menu-title" data-i18n="Kanban">یادداشت ها</span></a>
-            </li>
-            <li class=" nav-item"><a href="#"><i class="menu-livicon" data-icon="notebook"></i><span class="menu-title" data-i18n="Invoice">صورتحساب</span></a>
+            <li class=" nav-item"><a href="{% url 'course_list' %}"><i class="menu-livicon" data-icon="notebook"></i><span class="menu-title" data-i18n="Invoice">دوره آموزشی</span></a>
             <ul class="menu-content">
-                <li><a href="app-invoice-list.html"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice List">لیست صورتحساب ها</span></a>
+                <li><a href="{% url 'course_list' %}"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice List">لیست دوره ها</span></a>
                 </li>
-                <li><a href="app-invoice.html"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice">صورتحساب</span></a>
-                </li>
-                <li><a href="app-invoice-edit.html"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice Edit">ویرایش صورتحساب</span></a>
-                </li>
-                <li><a href="app-invoice-add.html"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice Add">افزودن صورتحساب</span></a>
+                <li><a href="{% url 'course_new' %}"><i class="bx bx-left-arrow-alt"></i><span class="menu-item" data-i18n="Invoice">اضافه کردن دوره</span></a>
                 </li>
             </ul>
-            </li>
-            <li class=" nav-item"><a href="app-file-manager.html"><i class="menu-livicon" data-icon="save"></i><span class="menu-title" data-i18n="File Manager">مدیریت فایل</span></a>
             </li>
             <li class=" navigation-header"><span>رابط کاربری</span>
             </li>
